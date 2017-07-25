@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../App.css';
 
-class IndexComponent extends Component {
+class CounterComponent extends Component {
 
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload
-        </p>
+        <button onClick={ () => this.props.increment()}> Increase Count </button>
+        <div> The Count is = {this.props.count} </div>
+        <button onClick={ () => this.props.decrement()}> Decrease Count </button>
         <p className="App-intro">
           Redux has been setup in the project.
           </p>
@@ -23,4 +20,4 @@ class IndexComponent extends Component {
 }
 
 
-export default IndexComponent;
+export default CounterComponent;

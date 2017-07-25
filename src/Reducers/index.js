@@ -3,10 +3,10 @@ import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import promise from 'redux-promise';
 
-import indexReducer from './IndexReducer'
+import counterReducer from './CounterReducer'
 
 const AppReducers = combineReducers({
-    indexReducer,
+    counterReducer,
 });
 
 const rootReducer = (state, action) => {

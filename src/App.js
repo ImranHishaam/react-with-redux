@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import IndexComponent from './Actions/IndexAction';
+import CounterComponent from './Actions/CounterAction';
 
 class App extends Component {
   render() {
     return (
-      <IndexComponent />
+      <CounterComponent />
     );
   }
 }

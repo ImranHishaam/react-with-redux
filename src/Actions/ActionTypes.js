@@ -1,1 +1,2 @@
-export const REDUX_STARTER_KIT = 'redux_starter_kit'
+export const COUNTER_INCREMENT = 'counter_increment';
+export const COUNTER_DECREMENT = 'counter_decrement';
